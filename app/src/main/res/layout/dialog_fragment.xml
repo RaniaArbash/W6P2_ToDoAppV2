@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal|center_vertical"
+    >
+
+    <EditText
+        android:id="@+id/task_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:hint="Enter New Task">
+
+    </EditText>
+
+    <DatePicker
+        android:id="@+id/datapicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner">
+
+    </DatePicker>
+
+    <Button
+        android:id="@+id/save_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:onClick="save_task"
+        android:text="Save" />
+</LinearLayout>
